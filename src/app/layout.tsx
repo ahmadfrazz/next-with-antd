@@ -6,6 +6,7 @@ import StoreProvider from '../lib/Redux/StoreProvider';
 import { ConfigProvider } from 'antd';
 import customTheme from '@src/theme/themeConfig';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'Youni',
@@ -22,7 +23,12 @@ export default function RootLayout({
       <body className={`antialiased`} suppressHydrationWarning>
         <ConfigProvider theme={customTheme}>
           <AntdRegistry>
-            <StoreProvider>{children}</StoreProvider>
+            <StoreProvider>
+              <>
+                {children}
+                <Toaster />
+              </>
+            </StoreProvider>
           </AntdRegistry>
         </ConfigProvider>
       </body>

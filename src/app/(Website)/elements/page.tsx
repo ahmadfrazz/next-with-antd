@@ -17,6 +17,7 @@ import {
   Modal,
 } from 'antd';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 function Elements() {
   const [modal2Open, setModal2Open] = useState(false);
@@ -29,7 +30,8 @@ function Elements() {
         <Buttons
           type='primary'
           onClick={() => {
-            messageApi.success('Success!');
+            // messageApi.success('Success!');
+            toast.error('Here is your toast.');
             // console.log('hello');
           }}
         >
