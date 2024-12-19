@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Space';
+  src: url('../Assets/fonts/SpaceGrotesk-Regular.ttf');
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../Assets/fonts/GeistVF.woff');
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'Geist-mono';
+  src: url('../Assets/fonts/GeistMonoVF.woff');
+  font-weight: 100 900;
+}
+
+body {
+  color: #ffffffd9; /* text color */
+  background: #0f0f0f; /* bg color */
+  font-family: 'Space', sans-serif;
+}
